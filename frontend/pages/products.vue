@@ -1,10 +1,7 @@
 <template>
-    <div>
-        <div v-for="product in products" :key=product.id>
-            {{ product.attributes.name }}
-            {{ product.attributes.description }}
-            {{ '£' + product.attributes.price }}
-            <img :src="'http://localhost:1337' + product.attributes.image.data.attributes.formats.medium.url"/> 
+    <div class="flex flex-row flex-wrap">
+        <div class="my-5 w-1/2 md:w-1/4 px-3" v-for="product in products" :key=product.id>
+            <productCard :product="product" />            
         </div>
     </div>
 </template>

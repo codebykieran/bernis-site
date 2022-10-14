@@ -41,6 +41,7 @@ export default {
   },
 
   publicRuntimeConfig: {
-    API_URL: process.env.API_URL
+    API_URL: process.env.API_URL,
+    BACKEND_URL: process.env.BACKEND_URL
   }
 }
