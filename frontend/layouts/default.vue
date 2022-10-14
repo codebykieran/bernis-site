@@ -1,14 +1,15 @@
 <template>
-    <div class="container mx-auto py-3">
-        <navigation></navigation>
-        <Nuxt />
+    <div class="h-screen relative py-3">
+		<div class="container mx-auto">
+			<navigation></navigation>
+			<Nuxt />
+		</div>
+        <img class="absolute-0 opacity-50" src="../assets/img/honeycomb.png"/>
     </div>
 </template>
 
 <script>
-import navigation from '../components/navigation.vue'
 export default {
-  components: { navigation },
 
 }
 </script>
